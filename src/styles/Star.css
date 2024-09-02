@@ -1,0 +1,12 @@
+/* Star.css */
+.stars-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    overflow: hidden; /* Optional: prevent scrollbars */
+    z-index: -1; /* Optional: to place behind other content if needed */
+    background: linear-gradient(180deg, #000000, #070612, #19192c);
+}
+  

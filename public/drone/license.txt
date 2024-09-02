@@ -1,0 +1,11 @@
+Model Information:
+* title:	Drone: "Skyhunter Drone V-666"
+* source:	https://sketchfab.com/3d-models/drone-skyhunter-drone-v-666-ef67d1f692404d129dccccfd15acc557
+* author:	V-Enterprises (https://sketchfab.com/V-Enterprises)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Drone: "Skyhunter Drone V-666"" (https://sketchfab.com/3d-models/drone-skyhunter-drone-v-666-ef67d1f692404d129dccccfd15acc557) by V-Enterprises (https://sketchfab.com/V-Enterprises) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

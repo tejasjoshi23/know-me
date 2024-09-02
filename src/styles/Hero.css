@@ -1,0 +1,14 @@
+/* .hero-center>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+}
+.hero-center:nth-child(0){
+    top: 10%;
+}
+
+.hero-center:nth-child(1){
+    top: 30%;
+} */

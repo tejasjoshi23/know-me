@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 20px; /* Added more margin-top */
+  left: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  margin: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+  transition: background 0.3s, color 0.1s, top 0.3s, left 0.3s, right 0.3s, padding 0.3s, margin 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.navbar.sticky {
+  background: #0C0C27;
+  color: #ff4081;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* White shadow */
+}
+
+.navbar a {
+  color: inherit; /* Use inherit to ensure color change on scroll */
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: color 0.3s;
+}

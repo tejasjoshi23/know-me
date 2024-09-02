@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: 'Asap', sans-serif;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+  background: linear-gradient(
+    to bottom,
+    hsl(200deg, 80%, 55%),
+    hsl(200deg, 80%, 80%),
+    hsl(200deg, 80%, 80%),
+    hsl(230deg, 80%, 80%),
+    hsl(260deg, 80%, 80%),
+    hsl(290deg, 80%, 80%),
+    hsl(320deg, 80%, 80%),
+    hsl(340deg, 80%, 80%),
+    hsl(340deg, 80%, 70%) 100%
+  );
+  color: black;
+  font-size: clamp(13px, 5.5vw, 30px);
+}
+
+#sky-and-birds {
+  position: relative;
+}
+
+#canvas-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#cloud {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#cloud #cloud_layer1::before,
+#cloud #cloud_layer1::after,
+#cloud #cloud_layer2::before,
+#cloud #cloud_layer2::after {
+  content: '';
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://raw.githubusercontent.com/happy358/misc/main/image/cloud_X.png);
+  background-repeat: repeat-x;
+  animation: cloud var(--duration) linear infinite forwards;
+  opacity: 0;
+}
+
+#cloud #cloud_layer1::before {
+  --index: 0;
+}
+
+#cloud #cloud_layer1::after {
+  --index: 2;
+  transform: scale3d(-1, 1, 1);
+}
+
+#cloud #cloud_layer2::before,
+#cloud #cloud_layer2::after {
+  background-image: url(https://raw.githubusercontent.com/happy358/misc/main/image/cloud.png);
+}
+
+#cloud #cloud_layer2::before {
+  --index: 3;
+}
+
+#cloud #cloud_layer2::after {
+  --index: 1;
+}
+
+.arrows {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 0.5rem;
+  text-align: center;
+  mix-blend-mode: overlay;
+}
+
+.arrows div {
+  --arrowSize: 1.3rem;
+  --arrowColor: currentColor;
+  width: var(--arrowSize);
+  height: var(--arrowSize);
+  margin: calc(var(--arrowSize) * -1.5) 0;
+  background: transparent;
+  border: calc(var(--arrowSize) * 0.11) solid;
+  border-color: transparent transparent var(--arrowColor) var(--arrowColor);
+  transform: rotate(-45deg);
+  animation: arrow 2s infinite linear;
+}
+
+@keyframes arrow {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.arrows div:nth-of-type(3) { animation-delay: -0.8s; }
+.arrows div:nth-of-type(2) { animation-delay: -0.4s; }
+.arrows div:nth-of-type(1) { animation-delay: 0s; }
+
+@keyframes cloud {
+  0% {
+    opacity: 0;
+    background-position: var(--posX) var(--moveX) bottom calc(-1 * var(--lowHeight));
+    background-size: calc(1 * var(--lowHeight)) var(--lowHeight);
+  }
+  5% { opacity: var(--opacity); }
+  80% { opacity: var(--opacity); }
+  100% {
+    opacity: 0;
+    background-position: var(--posX) bottom;
+    background-size: calc(3 * var(--highHeight)) var(--highHeight);
+  }
+}

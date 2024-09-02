@@ -1,0 +1,11 @@
+Model Information:
+* title:	Robot rabbit
+* source:	https://sketchfab.com/3d-models/robot-rabbit-2c38882abfa74b27a7bfab630008dd93
+* author:	Andres Zuluaga (https://sketchfab.com/afzmtm)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Robot rabbit" (https://sketchfab.com/3d-models/robot-rabbit-2c38882abfa74b27a7bfab630008dd93) by Andres Zuluaga (https://sketchfab.com/afzmtm) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
