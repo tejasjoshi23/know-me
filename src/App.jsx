@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { About, Contact, Hero, Navbar } from "./components";
-import { SkyAndBirds } from "./components/canvas";
 import "./App.css";
 
 function App() {
