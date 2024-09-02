@@ -7,7 +7,6 @@ const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-center">
-        <div>{/* <RobotCanvas /> */}</div>
         <div><HomePageText /></div>
       </div>
       <StarsCanvas />
