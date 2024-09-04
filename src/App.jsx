@@ -10,9 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact/>} />
-
-        {/* Add additional routes here if needed */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

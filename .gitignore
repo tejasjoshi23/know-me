@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+
+public/pearl_drone/
+public/robot/
+public/robot_rabbit/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -1,3 +1,23 @@
+import {
+  html,
+  css,
+  javascript,
+  reactjs,
+  nodejs,
+  figma,
+  canva,
+  git,
+  microsoftExcel,
+  microsoftPowerPoint,
+  microsoftWord,
+  mongodb,
+  redux,
+  tailwind,
+  typescript,
+  unity,
+  vuforia,
+} from "../assets/index";
+
 export const ABOUT_TEXTS = {
   about1: `Tejas is Best !!`,
 
@@ -11,6 +31,84 @@ export const ABOUT_TEXTS = {
 
   about6: `Welcome to my realm! This is Tejas Joshi, a Computer Science Engineering enthusiast, completed journey at IIIT Vadodara this year. 🎓✨Dance with me in the code symphony where languages like C, C++, and Python weave tales, and the art of web development springs to life through HTML, CSS, and JavaScript. 🌐💻 As a creator and explorer, I craft dynamic web experiences using React.js and Node.js, orchestrating seamless web development and immersive 3D game environments. The digital canvas is my playground, where Unity3D comes alive with AR applications. 🕹️🚀 Beyond the screen, my journey extends to the realms of leadership and creativity. I've orchestrated TEDxIIITV, navigated literature fests, and steered the ship as the Chief Editor of the annual institute magazine 'Nakshatra.' 📚✨ Join me as we venture into the future, where technology meets creativity, and every line of code tells a story. From NDA qualifications to TEDx triumphs, every step is a pixel in the grand mosaic of my digital odyssey. 🌟✨ Welcome to the intersection of passion and proficiency, where the possibilities are as vast as the digital horizon. Let's code, create, and conquer together! 💻🚀✨`,
 };
+
+export const skills = [
+  {
+    name: "HTML5",
+    icon: html,
+  },
+
+  {
+    name: "CSS3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
+
+  {
+    name: "React.Js",
+    icon: reactjs,
+  },
+
+  {
+    name: "Tailwind",
+    icon: tailwind,
+  },
+
+  {
+    name: "Node.Js",
+    icon: nodejs,
+  },
+
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "canva",
+    icon:  canva,
+  },
+  {
+    name: "redux",
+    icon:  redux,
+  },
+  {
+    name: "typescript",
+    icon:  typescript,
+  },
+
+
+  {
+    name: "powerpoint",
+    icon: microsoftPowerPoint,
+  },
+  {
+    name: "excel",
+    icon: microsoftExcel,
+  },
+  {
+    name: "word",
+    icon: microsoftWord,
+  },
+  {
+    name: "vuforia",
+    icon: vuforia,
+  },
+  {
+    name: "unity",
+    icon: unity,
+  },
+];
 
 export const Emojis = ["😅", "😁", "😉", "😃", "😎", "🤩"];
 

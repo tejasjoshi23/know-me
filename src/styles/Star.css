@@ -1,12 +1,25 @@
-/* Star.css */
 .stars-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    overflow: hidden; /* Optional: prevent scrollbars */
-    z-index: -1; /* Optional: to place behind other content if needed */
-    background: linear-gradient(180deg, #000000, #070612, #19192c);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+  z-index: -1;
+  background: linear-gradient(180deg, #000000, #070612, #19192c);
 }
-  
+
+@media screen and (max-width: 768px) {
+  .stars-canvas {
+    width: 100%;
+    height: 350vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stars-canvas {
+    width: 100%;
+
+    height: 200vh; /* Further reduce height for mobile screens */
+  }
+}

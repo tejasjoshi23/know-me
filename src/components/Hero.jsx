@@ -1,5 +1,5 @@
 import React from "react";
-import { StarsCanvas, ColorfulClouds, Comet, RobotCanvas } from "./canvas";
+import { StarsCanvas, ColorfulClouds, Comet, RobotCanvas, SkyMoon } from "../canvas";
 import { HomePageText } from "../utils";
 import "../styles/Hero.css";
 
@@ -9,9 +9,8 @@ const Hero = () => {
       <div className="hero-center">
         <div><HomePageText /></div>
       </div>
-      <StarsCanvas />
-      <ColorfulClouds />
       <Comet />
+      <SkyMoon/>
     </div>
   );
 };

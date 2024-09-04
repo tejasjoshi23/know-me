@@ -5,8 +5,7 @@
   background: #acacac;
   filter: blur(1px);
   transform: rotate(60deg);
-  animation: comet 1s linear infinite; 
-
+  animation: comet 1s linear infinite;
 }
 
 @keyframes comet {
@@ -39,7 +38,7 @@
     opacity: 0.8;
   }
 }
-  
+
 @media (max-width: 768px) {
   .comet {
     width: 1px;
