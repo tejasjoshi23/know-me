@@ -1,34 +1,36 @@
 .contact-container {
   display: flex;
   justify-content: center;
-  flex-direction: column-reverse;
   overflow: hidden;
+  flex-direction: row;
 }
-
 .contact-form {
   flex: 1;
   background-color: rgba(123, 244, 255, 0.351);
   position: relative;
-  margin-left: 200px;
-  border-radius: 20px;
+  border-radius: 80px;
+  margin: 100px 80px;
   width: 100%;
+  padding: 40px 80px;
+}
 
-}
-.contact-form > * {
-  padding: 0 100px;
-}
 
 .section-sub-text {
   color: #ffdf9d;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  font-size: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .section-head-text {
   color: white;
-  font-size: 2.5rem;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   font-weight: bold;
+  margin: 0;
 }
 
 .form {
@@ -36,11 +38,10 @@
   /* width: 100%; */
   flex-direction: column;
   gap: 20px;
-  margin-top: 1rem;
+  margin-top: 14px;
 }
 
 .form-label {
-  /* background-color: ; */
   display: flex;
   flex-direction: column;
   color: #0f005c;
@@ -50,16 +51,17 @@
 
 .form-input,
 .form-textarea {
+  width: 240px;
   border-radius: 50px;
   background-color: #3333332f;
-  padding: 10px 10px;
+  padding: 10px 20px;
   outline: none;
   border: none;
 }
 .form-input::placeholder,
 .form-textarea::placeholder {
   color: #000000;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .form-textarea {
   resize: none;
@@ -67,12 +69,9 @@
 
 .form-button {
   background-color: #29007c;
-  /* color: #7d4dbd; */
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 60px;
   font-weight: bold;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -80,18 +79,16 @@
   background-color: #005880;
 }
 
-@media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row;
-    margin-left: 10px;
-  }
+  
+@media (max-width: 768px) {
 
   .contact-form {
-    flex: 0.5;
-    padding: 1rem;
-  }
-
-  .section-head-text {
-    font-size: 3.75rem;
+    flex: 1;
+    background-color: rgba(123, 244, 255, 0.351);
+    position: relative;
+    border-radius: 80px;
+    margin: 10px 20px;
+    width: 80%;
+    padding: 20px 40px;
   }
 }

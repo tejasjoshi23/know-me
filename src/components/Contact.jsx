@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { slideIn } from "../utils";
 // import { RobotCanvas } from "./canvas";
-import { UnderwaterBackground } from "./canvas";
+import UnderwaterBackground from "../canvas/UnderWater";
 import "../styles/Contact.css";
 
 const Contact = () => {
