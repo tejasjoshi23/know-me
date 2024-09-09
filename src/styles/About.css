@@ -77,12 +77,16 @@
 
 /* Right section */
 .right-section {
-  display: flex;
   flex: 2;
-  flex-direction: column;
-  align-items: center;
+  
 }
 
+.right-section>*{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .profile-image {
   width: 250px;
   height: 250px;
@@ -93,8 +97,7 @@
     rgba(7, 7, 9, 1) 6.5%,
     rgba(27, 24, 113, 1) 93.2%
   );
-  margin-bottom: 20px;
-  transition: transform 1s ease, filter 0.5s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .profile-image:hover {
@@ -104,7 +107,7 @@
     rgba(27, 24, 113, 1) 93.2%
   );
   transform: scale(1.05);
-  box-shadow: 0 5px 5px 1px rgb(75, 156, 255);
+  box-shadow: 0 0px 10px 1px rgb(255, 251, 133);
 }
 
 /* Name styling */
@@ -135,8 +138,13 @@
   transition: transform 0.3s ease;
 }
 
-.contact-icons a:hover {
+.contact-icons a>*:hover {
   transform: translateY(-4px) scale(1.05);
+}
+.resume-text{
+  display: flex;
+  justify-content: center;
+  margin: 0;
 }
 
 /* Responsive design */
@@ -163,10 +171,8 @@
   text-align: center;
 }
 
-.skills h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #0b04cb;
+.skills h1 {
+  /* margin-bottom: 20px; */
 }
 
 .skill-container {
@@ -195,9 +201,9 @@
   height: auto;
   filter: grayscale(100%);
 }
-.skill-items:hover {
+/* .skill-items:hover {
   box-shadow: inset 0 0px 8px 3px rgba(255, 255, 255, 0.763);
-}
+} */
 .skill-items:hover img {
   filter: grayscale(0%);
   transition: filter 0.5s ease;

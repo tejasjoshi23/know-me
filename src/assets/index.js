@@ -1,10 +1,10 @@
 import html from "./skills/html.png";
 import css from "./skills/css.png";
 import javascript from "./skills/javascript.png";
-import reactjs from "./skills/reactjs.png";
-import nodejs from "./skills/nodejs.png";
 import figma from "./skills/figma.png";
 import canva from "./skills/canva.png";
+import reactjs from "./skills/reactjs.png";
+import nodejs from "./skills/nodejs.png";
 import git from "./skills/git.png";
 import microsoftExcel from "./skills/microsoft-excel.png";
 import microsoftWord from "./skills/microsoft-word.png";
@@ -15,8 +15,9 @@ import tailwind from "./skills/tailwind.png";
 import typescript from "./skills/typescript.png";
 import unity from "./skills/unity.png";
 import vuforia from "./skills/vuforia.png";
-// import nodejs from "./skills/nodejs.png";
-// import nodejs from "./skills/nodejs.png";
+
+import barc from "./experience/barc.png";
+import devforge from "./experience/devf.png";
 // import nodejs from "./skills/nodejs.png";
 // import nodejs from "./skills/nodejs.png";
 // import nodejs from "./skills/nodejs.png";
@@ -42,4 +43,6 @@ export {
   typescript,
   unity,
   vuforia,
+  barc,
+  devforge
 };

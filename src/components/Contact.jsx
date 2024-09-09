@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { slideIn } from "../utils";
 // import { RobotCanvas } from "./canvas";
-import UnderwaterBackground from "../canvas/UnderWater";
+import {UnderwaterBackground, SkyMoon} from "../canvas";
 import "../styles/Contact.css";
 
 const Contact = () => {
@@ -28,20 +28,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
     emailjs
-      .send(
-        "service_gc67n0p",
-        "template_10ccf7k",
-        {
-          from_name: form.name,
-          to_name: "Tejas Joshi",
-          from_email: form.email,
-          to_email: "tejasj1823@gmail.com",
-          message: form.message,
-        },
-        "TznmkQMgV5WRg9NvN"
-      )
+    .send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        to_name: process.env.REACT_APP_EMAILJS_TO_NAME,
+        from_email: form.email,
+        to_email: process.env.REACT_APP_EMAILJS_TO_EMAIL,
+        message: form.message,
+      },
+      process.env.REACT_APP_EMAILJS_USER_ID
+    )
+  
       .then(
         () => {
           setLoading(false);
@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="contact">
       <div className="contact-container">
         <motion.div
           initial="hidden"
@@ -133,6 +133,7 @@ const Contact = () => {
           {/* <RobotCanvas /> */}
         </motion.div>
       </div>
+
       <UnderwaterBackground />
     </div>
   );

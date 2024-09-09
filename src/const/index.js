@@ -16,6 +16,8 @@ import {
   typescript,
   unity,
   vuforia,
+  barc,
+  devforge
 } from "../assets/index";
 
 export const ABOUT_TEXTS = {
@@ -47,14 +49,18 @@ export const skills = [
     icon: javascript,
   },
 
-  {
-    name: "React.Js",
-    icon: reactjs,
-  },
-
+  
   {
     name: "Tailwind",
     icon: tailwind,
+  },
+  {
+    name: "typescript",
+    icon:  typescript,
+  },
+  {
+    name: "React.Js",
+    icon: reactjs,
   },
 
   {
@@ -82,10 +88,7 @@ export const skills = [
     name: "redux",
     icon:  redux,
   },
-  {
-    name: "typescript",
-    icon:  typescript,
-  },
+ 
 
 
   {
@@ -109,6 +112,34 @@ export const skills = [
     icon: unity,
   },
 ];
+
+export const experiences = [
+  {
+    title: "Project Trainne",
+    company_name: "Bhabha Atomic Research Centre",
+    icon: barc,
+    iconBg: "#ffff",
+    date: "Feb 2024 - May 2024",
+    points: [
+      "Developed a web-based ’Visitor Tracking System’ utilizing React.js, Redux, Node.js, and RESTful APIs for frontend and backend integration. Implemented secure authentication and authorization using JWT tokens to ensure data privacy.",
+      "The system supports real-time data handling for modules including, Vehicle Monitoring, Smart Wearable Device Monitoring, User and Card Management, with live deployment on BARC premises, optimizing visitor management and tracking capabilities within the facility."
+    ],
+  },
+  {
+    title: "Software Trainne",
+    company_name: "Devforge Technology",
+    icon: devforge,
+    iconBg: "#ffff",
+    date: "Jan 2024 - Feb 2024",
+    points: [
+      "Developed a Resume-builder application for the company by refining the user interface, working with backend and web services to integrate additional features and expand the resume template library.",
+      "Created a portfolio website for DevForge Technology, utilizing React.js for dynamic front-end interactions, CSS for styling, and Three.js for advanced 3D graphics and responsive design",
+    ],
+  }, 
+
+  // Add more experiences here
+];
+
 
 export const Emojis = ["😅", "😁", "😉", "😃", "😎", "🤩"];
 

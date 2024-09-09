@@ -1,0 +1,146 @@
+.experience-container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.experience-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 200px;
+  padding: 100px 80px;
+  min-height: calc(100vh - 200px); /* Ensure the section is centered vertically */
+
+}
+.head-text{
+margin-top: 0;
+}
+
+.vertical-timeline-element > * {
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.vertical-timeline-element > *:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.experience-company {
+  color: #555;
+  font-size: 20px;
+}
+
+.experience-points {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.experience-point {
+  color: #191919;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-image {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.cta-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.hidden-on-small {
+  display: none;
+}
+
+.cta-button {
+  /* background-color: #007bff; Example color */
+  color: rgb(191, 148, 255);
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 1168px) {
+  .head-text {
+    font-size: 20px;
+  }
+  .experience-section {
+    margin: 130px 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .experience-section {
+    margin: 130px 20px;
+    padding: 10px;
+  }
+  .hidden-on-small {
+    display: block;
+  }
+}
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate.vertical-timeline-element--left {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vertical-timeline-element--left {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

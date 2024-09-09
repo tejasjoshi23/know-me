@@ -42,14 +42,16 @@
 
 .animated-text {
   z-index: 10;
-  position: fixed;
+  position: relative;
   top: 50%;
-  left: 30%;
+  left: 25%;
   font: 100% / 1.5 Raleway, sans-serif;
   color: hsl(230, 100%, 95%);
   font-size: 5rem;
-  font-weight: 300;
   animation: lights 5s 750ms linear infinite;
+  font-family: "Nerko One", cursive;
+  font-weight: 800;
+  font-style: normal;
 }
 
 @media (max-width: 1024px) {
