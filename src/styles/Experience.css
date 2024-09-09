@@ -14,8 +14,7 @@
   justify-content: center;
   align-items: center;
   margin: 0px 200px;
-  padding: 100px 80px;
-  min-height: calc(100vh - 200px); /* Ensure the section is centered vertically */
+  padding: 80px;
 
 }
 .head-text{
