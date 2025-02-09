@@ -7,6 +7,8 @@ import {
   figma,
   canva,
   git,
+  github,
+  powerbi,
   microsoftExcel,
   microsoftPowerPoint,
   microsoftWord,
@@ -16,8 +18,14 @@ import {
   typescript,
   unity,
   vuforia,
+  sql,
+  c,
+  cpp,
+  java,
+  python,
+  jnj,
   barc,
-  devforge
+  devforge,
 } from "../assets/index";
 
 export const ABOUT_TEXTS = {
@@ -36,6 +44,22 @@ export const ABOUT_TEXTS = {
 
 export const skills = [
   {
+    name: "C",
+    icon: c,
+  },
+  {
+    name: "C++",
+    icon: cpp,
+  },
+  {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
     name: "HTML5",
     icon: html,
   },
@@ -49,14 +73,14 @@ export const skills = [
     icon: javascript,
   },
 
-  
   {
     name: "Tailwind",
     icon: tailwind,
   },
+
   {
     name: "typescript",
-    icon:  typescript,
+    icon: typescript,
   },
   {
     name: "React.Js",
@@ -73,34 +97,45 @@ export const skills = [
     icon: mongodb,
   },
   {
-    name: "git",
-    icon: git,
+    name: "SQL",
+    icon: sql,
   },
   {
-    name: "figma",
+    name: "Git",
+    icon: git,
+  },
+
+  {
+    name: "GitHub",
+    icon: github,
+  },
+  {
+    name: "Power BI",
+    icon: powerbi,
+  },
+  {
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "canva",
-    icon:  canva,
+    name: "Canva",
+    icon: canva,
   },
   {
     name: "redux",
-    icon:  redux,
+    icon: redux,
   },
- 
-
 
   {
-    name: "powerpoint",
+    name: "MS Powerpoint",
     icon: microsoftPowerPoint,
   },
   {
-    name: "excel",
+    name: "MS Excel",
     icon: microsoftExcel,
   },
   {
-    name: "word",
+    name: "MS Word",
     icon: microsoftWord,
   },
   {
@@ -115,6 +150,19 @@ export const skills = [
 
 export const experiences = [
   {
+    title: "Data Analyst",
+    company_name: "Johnson & Johnson",
+    icon: jnj, // assuming you have the J&J icon imported
+    iconBg: "#ffff",
+    date: "Sept 2024 - Present",
+    points: [
+      "Ensured accurate data extraction, validation, and global shipment tracking, providing real-time support for data validation queries to enhance supply chain efficiency.",
+      "Collaborated with cross-functional US and Canada teams to optimize workflows, maintain data integrity, and support strategic decision-making within the supply chain domain.",
+      "Utilized tools such as Excel, Jira, SQL, Python, JDE, S4 Hana, and OMP for data extraction, handling, and planning.",
+    ],
+  },
+
+  {
     title: "Project Trainne",
     company_name: "Bhabha Atomic Research Centre",
     icon: barc,
@@ -122,7 +170,7 @@ export const experiences = [
     date: "Feb 2024 - May 2024",
     points: [
       "Developed a web-based ’Visitor Tracking System’ utilizing React.js, Redux, Node.js, and RESTful APIs for frontend and backend integration. Implemented secure authentication and authorization using JWT tokens to ensure data privacy.",
-      "The system supports real-time data handling for modules including, Vehicle Monitoring, Smart Wearable Device Monitoring, User and Card Management, with live deployment on BARC premises, optimizing visitor management and tracking capabilities within the facility."
+      "The system supports real-time data handling for modules including, Vehicle Monitoring, Smart Wearable Device Monitoring, User and Card Management, with live deployment on BARC premises, optimizing visitor management and tracking capabilities within the facility.",
     ],
   },
   {
@@ -135,12 +183,13 @@ export const experiences = [
       "Developed a Resume-builder application for the company by refining the user interface, working with backend and web services to integrate additional features and expand the resume template library.",
       "Created a portfolio website for DevForge Technology, utilizing React.js for dynamic front-end interactions, CSS for styling, and Three.js for advanced 3D graphics and responsive design",
     ],
-  }, 
+  },
 
   // Add more experiences here
 ];
 
-
 export const Emojis = ["😅", "😁", "😉", "😃", "😎", "🤩"];
 
-export const HeroTitle = ["Heyya, I'm Tejas"];
+export const HeroTitle = [
+  "From Cosmos to Code, Exploring the Digital Universe",
+];

@@ -36,5 +36,9 @@
 .nav-links>*:hover{
   color: white;
   -webkit-text-stroke: 1px rgba(0, 22, 69, 0.444);
+}
 
+.logo>*:hover{
+  color: #ffee00;
+ 
 }

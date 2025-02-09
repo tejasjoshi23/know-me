@@ -1,4 +1,6 @@
-@keyframes lights {
+
+ @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nerko+One&display=swap');
+ @keyframes lights {
   0% {
     color: hsl(230, 40%, 80%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
@@ -47,9 +49,9 @@
   left: 25%;
   font: 100% / 1.5 Raleway, sans-serif;
   color: hsl(230, 100%, 95%);
-  font-size: 5rem;
+  font-size: 2rem;
   animation: lights 5s 750ms linear infinite;
-  font-family: "Nerko One", cursive;
+  font-family: "Cedarville Cursive", serif;
   font-weight: 800;
   font-style: normal;
 }

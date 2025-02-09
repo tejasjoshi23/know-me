@@ -47,9 +47,7 @@ const Experience = () => {
               >
                 <div className="experience-content">
                   <h3 className="experience-title">{experience.title}</h3>
-                  <p className="experience-company">
-                    {experience.company_name}
-                  </p>
+                  <p className="experience-company">{experience.company_name}</p>
                   <ul className="experience-points">
                     {experience.points.map((point, index) => (
                       <li

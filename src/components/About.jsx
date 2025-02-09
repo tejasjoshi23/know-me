@@ -7,20 +7,17 @@ import { StarsCanvas } from "../canvas";
 import { skills } from "../const/index";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils";
-
 import "../styles/About.css";
 import profileImage from "../assets/photo2.png";
 
 const About = () => {
   const [selectedAbout, setSelectedAbout] = useState("about3");
   const [skillColors, setSkillColors] = useState({});
-  const pdfUrl = "/resume.pdf";
+  const pdfUrl = "/resume1.pdf";
 
   const imageRef = useRef(null);
-
   useEffect(() => {
     extractColorsAndInjectCSS(skills, setSkillColors); // Use the utility function
-
     // Initialize Vanilla Tilt on the image element
     if (imageRef.current) {
       VanillaTilt.init(imageRef.current, {
@@ -32,8 +29,7 @@ const About = () => {
     }
 
     return () => {
-      // Clean up the effect when the component unmounts
-      if (imageRef.current && imageRef.current.vanillaTilt) {
+       if (imageRef.current && imageRef.current.vanillaTilt) {
         imageRef.current.vanillaTilt.destroy();
       }
     };
